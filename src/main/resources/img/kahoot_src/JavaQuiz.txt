@@ -1,0 +1,24 @@
+What is the default value of a static integer variable of a class in Java?
+0
+1
+Garbage value
+NaN
+
+What is the multiple inheritance?
+One class inheriting from more super classes
+More classes inheriting from one super class
+More classes inheriting from more super classes
+More classes inheriting from more super classes
+
+Which statement is not true in java language?
+A private member of a class cannot be accessed by the methods of the same class
+A public member of a class can be accessed in all the packages
+A private member of a class cannot be accessed from its derived class
+A private member of a class cannot be accessed from its derived class
+
+To prevent any method from overriding, we declare the method as {blank}.
+Final
+
+One more {blank}.
+Likely
+

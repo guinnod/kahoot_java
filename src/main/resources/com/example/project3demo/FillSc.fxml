@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.fillctrl">
+   <top>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="8.0" arcWidth="8.0" fill="WHITE" height="102.0" width="379.0">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <Label fx:id="question" maxWidth="350.0" text="What is the best program language?" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="skip" mnemonicParsing="false" prefHeight="38.0" prefWidth="60.0" style="-fx-background-color: #1368ce;" text="Skip" textFill="#f2f2f2">
+                           <StackPane.margin>
+                              <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </top>
+   <left>
+      <StackPane prefHeight="250.0" prefWidth="152.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="250.0" prefWidth="166.0">
+               <children>
+                  <Circle fill="#864cbf" radius="55.0" />
+                  <Label fx:id="time" text="30" textAlignment="CENTER" textFill="#f2f2f2">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefWidth="343.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/kahoot_src/5g.gif" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </center>
+   <right>
+      <StackPane prefHeight="250.0" prefWidth="152.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="216.0" prefWidth="120.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="250.0" prefWidth="145.0">
+                     <children>
+                        <Label fx:id="answers" text="0" textFill="#333333">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label text="Answer">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <StackPane.margin>
+                        <Insets right="10.0" />
+                     </StackPane.margin>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </right>
+</BorderPane>

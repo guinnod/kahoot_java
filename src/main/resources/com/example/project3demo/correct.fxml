@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #46178f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.waitanswer">
+    <right>
+        <Pane minWidth="40.0" prefHeight="400.0" prefWidth="80.0" BorderPane.alignment="CENTER">
+            <children>
+                <Circle fill="#0000001a" layoutX="48.0" layoutY="564.0" radius="232.0" />
+            </children>
+        </Pane>
+    </right>
+    <left>
+        <Pane prefHeight="400.0" prefWidth="80.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle fill="#0000001a" height="312.0" layoutX="-68.0" layoutY="-64.0" rotate="45.0" width="302.0" />
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+            <Label text="Correct" textAlignment="CENTER" textFill="#f2f2f2">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <StackPane prefHeight="65.0" prefWidth="440.0">
+               <children>
+                  <Circle fx:id="CircleGreenOrRed" fill="#66bf39" radius="28.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="XorV" text="✓" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="62.0" prefWidth="440.0">
+               <children>
+                  <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#00000066" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                  <Label fx:id="correctp" text="+300" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

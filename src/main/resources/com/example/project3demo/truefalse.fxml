@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.truectrl">
+   <top>
+      <StackPane prefHeight="97.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#f2f2f2" height="49.0" stroke="#f2f2f2" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <StackPane>
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/img/kahoot_src/Controller.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="True or False">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="467.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="True" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #1368ce;">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+               </HBox.margin>
+               <children>
+                  <Rectangle fill="#f2f2f2" height="30.0" rotate="45.0" width="30.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </StackPane>
+            <StackPane fx:id="False" prefHeight="281.0" prefWidth="200.0" style="-fx-background-color: #e21b3c;">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </HBox.margin>
+               <children>
+                  <Polygon fill="#f2f2f2" points="-10.000005722045898, 40.000022888183594, 30.000022888183594, 40.000022888183594, 10.000022888183594, 7.199989318847656" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </StackPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

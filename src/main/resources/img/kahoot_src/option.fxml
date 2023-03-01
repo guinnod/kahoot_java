@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontproject3.opcontrl">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #e21b3c;">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />
+                     </GridPane.margin>
+                     <children>
+                        <Polygon fill="#f2f2f2" points="-10.000005722045898, 40.000022888183594, 30.000022888183594, 40.000022888183594, 10.000022888183594, 7.199989318847656" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #1368ce;" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <children>
+                        <Rectangle fill="#f2f2f2" height="30.0" rotate="45.0" width="30.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffa602;" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <children>
+                        <Circle fill="#f2f2f2" radius="18.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #26890c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                     </GridPane.margin>
+                     <children>
+                        <Rectangle fill="#f2f2f2" height="30.0" width="30.0" />
+                     </children>
+                  </StackPane>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label text="Label">
+                     <StackPane.margin>
+                        <Insets left="20.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" />
+            <StackPane alignment="CENTER_RIGHT" prefHeight="59.0" prefWidth="112.0" />
+            <StackPane prefHeight="59.0" prefWidth="62.0">
+               <children>
+                  <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#333333" height="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="107.0">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <Label text="12" textFill="#f2f2f2">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children></HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="4">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="of">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="5">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="34.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="45.0" arcWidth="45.0" fill="#f2f2f2" height="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="142.0">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <Pane prefHeight="58.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="54.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Desktop/resources/img/kahoot_src/Controller.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="87.0" layoutY="19.0" text="Quiz">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

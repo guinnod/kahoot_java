@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="562.0" prefWidth="600.0" style="-fx-background-color: #f0f0f1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.questionctrl">
+    <bottom>
+        <StackPane BorderPane.alignment="BOTTOM_CENTER">
+            <children>
+                <GridPane prefHeight="200.0" prefWidth="600.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #e21b3c;">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />
+                            </GridPane.margin>
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Polygon fill="#f2f2f2" points="-10.000005722045898, 40.000022888183594, 30.000022888183594, 40.000022888183594, 10.000022888183594, 7.199989318847656">
+                                            <HBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Polygon>
+                                        <Label fx:id="red" text="Label" textFill="#f2f2f2" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #1368ce;" GridPane.columnIndex="1">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Rectangle fill="#f2f2f2" height="25.0" rotate="45.0" width="25.0">
+                                            <HBox.margin>
+                                                <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                                            </HBox.margin></Rectangle>
+                                        <Label fx:id="blue" text="Label" textFill="#f2f2f2" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffa602;" GridPane.rowIndex="1">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Circle fill="#f2f2f2" radius="18.0">
+                                            <HBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Circle>
+                                        <Label fx:id="yellow" text="Label" textFill="#f2f2f2" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="10.0" right="5.0" top="5.0" />
+                            </GridPane.margin>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #26890c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                            </GridPane.margin>
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Rectangle fill="#f2f2f2" height="30.0" width="30.0">
+                                            <HBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                            </HBox.margin>
+                                        </Rectangle>
+                                        <Label fx:id="green" text="Label" textFill="#f2f2f2" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                    </children></HBox>
+                            </children>
+                        </StackPane>
+                    </children>
+                    <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </opaqueInsets>
+                </GridPane>
+            </children>
+        </StackPane>
+    </bottom>
+    <center>
+        <StackPane prefWidth="343.0" BorderPane.alignment="BOTTOM_CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <children>
+                <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:/Users/Абзал/Desktop/resources/img/kahoot_src/5g.gif" />
+                    </image>
+                    <StackPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </StackPane.margin>
+                </ImageView>
+            </children>
+        </StackPane>
+    </center>
+    <left>
+        <StackPane prefHeight="216.0" prefWidth="106.0" BorderPane.alignment="CENTER">
+            <children>
+                <Circle fill="#864cbf" radius="55.0" />
+                <Label fx:id="time" text="30" textAlignment="CENTER" textFill="#f2f2f2">
+                    <font>
+                        <Font name="Franklin Gothic Heavy" size="48.0" />
+                    </font>
+                </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets left="10.0" />
+            </BorderPane.margin>
+        </StackPane>
+    </left>
+    <right>
+        <StackPane prefHeight="216.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" prefHeight="216.0" prefWidth="78.0">
+                    <children>
+                        <Label fx:id="answers" text="0" textFill="#333333">
+                            <font>
+                                <Font name="Franklin Gothic Heavy" size="48.0" />
+                            </font>
+                        </Label>
+                        <Label text="Answer">
+                            <font>
+                                <Font name="Franklin Gothic Heavy" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <StackPane.margin>
+                        <Insets right="10.0" />
+                    </StackPane.margin>
+                </VBox>
+            </children>
+        </StackPane>
+    </right>
+    <top>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="8.0" arcWidth="8.0" fill="WHITE" height="102.0" width="379.0">
+                    <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </StackPane.margin></Rectangle>
+                <Label fx:id="question" maxWidth="350.0" text="What is the best program language?" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="Arial Bold" size="24.0" />
+                    </font>
+                </Label>
+                <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="skip" mnemonicParsing="false" onAction="#action" prefHeight="38.0" prefWidth="60.0" style="-fx-background-color: #1368ce;" text="Skip" textFill="#f2f2f2">
+                            <StackPane.margin>
+                                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                            </StackPane.margin>
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </StackPane>
+            </children></StackPane>
+    </top>
+</BorderPane>

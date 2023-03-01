@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #46178f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.clientloginctrl">
+   <right>
+      <Pane minWidth="40.0" prefHeight="400.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#0000001a" layoutX="138.0" layoutY="554.0" radius="232.0" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <Pane prefHeight="400.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#0000001a" height="312.0" layoutX="-68.0" layoutY="-64.0" rotate="45.0" width="302.0" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/kahoot_src/KahootLogo_Full_white.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <StackPane>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#f2f2f2" height="99.0" width="272.0" />
+                  <VBox alignment="CENTER" maxWidth="240.0" prefHeight="99.0" prefWidth="240.0">
+                     <children>
+                        <TextField fx:id="textField" alignment="CENTER" maxHeight="35.0" maxWidth="240.0" prefHeight="35.0" prefWidth="335.0" promptText="Game PIN" style="-fx-background-color: #f2f2f2; -fx-border-color: #c4c4c9; -fx-border-width: 1.5;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="enter" mnemonicParsing="false" onAction="#sendPin" prefHeight="34.0" prefWidth="240.0" style="-fx-background-color: #333333;" text="Enter" textFill="#f2f2f2">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

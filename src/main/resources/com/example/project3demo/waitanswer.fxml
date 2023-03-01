@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #46178f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project3demo.waitanswer">
+    <right>
+        <Pane minWidth="40.0" prefHeight="400.0" prefWidth="80.0" BorderPane.alignment="CENTER">
+            <children>
+                <Circle fill="#0000001a" layoutX="48.0" layoutY="564.0" radius="232.0" />
+            </children>
+        </Pane>
+    </right>
+    <left>
+        <Pane prefHeight="400.0" prefWidth="80.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle fill="#0000001a" height="312.0" layoutX="-68.0" layoutY="-64.0" rotate="45.0" width="302.0" />
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <StackPane alignment="TOP_CENTER" prefWidth="395.0">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxWidth="446.0" prefHeight="112.0" prefWidth="446.0">
+                            <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/img/kahoot_src/Kahoot-lit.png"/>
+                           </image>
+                        </ImageView>
+                                <Label text="Pure genius?" textAlignment="CENTER" textFill="#f2f2f2">
+                                    <font>
+                                        <Font name="Arial Bold" size="28.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </StackPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
